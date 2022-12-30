@@ -17,3 +17,17 @@ y = 0.5x^2 + 0.5x^1 + 0.0
 Answer using "Y" or "N" for "yes" and "no", respectively:
 Show a graph of the polynomial with your points? n
 ```
+
+This is done using the Vandermonde matrix, solving the matrix equation
+```math
+\begin{bmatrix}
+1 & \cdots & x_1^{n-1} \\
+\vdots & \ddots & \vdots \\
+1 & \cdots & x_n^{n-1}
+\end{bmatrix}\begin{bmatrix}
+c_0 \\ \vdots \\ c_{n-1}
+\end{bmatrix} = \begin{bmatrix}
+y_1 \\ \vdots \\ y_n
+\end{bmatrix}
+```
+to fit the polynomial $c_{n-1}x^{n-1} + \ldots + c_0$ to a set of $n$ points.
