@@ -62,7 +62,7 @@ del(matrix_A_list); del(vector_b_list)
             
 # find and display the results
 coeffs = np.linalg.solve(A, b)
-del(A); del(B)
+del(A); del(b)
 print("\nEquation of the interpolating polynomial (up to 3 decimal places per coefficient):")
 print("y = ", end = "")
 for i in range(len(coeffs) - 1, 0, -1):
