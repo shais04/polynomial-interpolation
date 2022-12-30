@@ -1,5 +1,5 @@
 # polynomial-interpolation
-Finds the interpolating polynomial of least degree that goes through a set of points given as input. For example, providing the input `1, 1`, `2, 3`, and `3, 6` gives the following:
+Finds the interpolating polynomial of least degree that goes through a set of points given as input. An example usage with the points `(1, 1)`, `(2, 3)`, and `(3, 6)` given as input yields the following:
 
 ```
 Provide points as input in the form x,y.
